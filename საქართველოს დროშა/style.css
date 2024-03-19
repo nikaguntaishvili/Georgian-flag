@@ -1,0 +1,107 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+.cnt{ 
+    position: absolute; 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100vh; 
+    background-image: linear-gradient(#FF0000, #FFFFFF, #FF0000); 
+} 
+p { 
+    font-size: 80px; 
+    margin-left: 27%; 
+    background: linear-gradient( #FF0000 10%, #FFFFFF 30%,#FF0000 100%); 
+    background-clip:text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+  } 
+.main{ 
+    height: 600px; 
+    width: 850px; 
+    background-color: #FFFFFF;
+    margin-top: 3%; 
+    margin-left: 3%;
+    display: flex; 
+    flex-direction: column; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+    border-radius: 7px; 
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.3); 
+} 
+.red1{ 
+    width: 100%; 
+    height: 80px; 
+    background-color: #FF0000; 
+    margin-top: 30%; 
+    position: absolute; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    animation: colors 0.9s ease 1s forwards; 
+} 
+.red2{ 
+    width: 80px; 
+    height: 100%; 
+    background-color: #FF0000; 
+    left: 45%; 
+    position: absolute; 
+    transform: scaleX(0); 
+    transform-origin: bottom; 
+    animation: colors 0.9s ease 1s forwards; 
+} 
+@keyframes colors{ 
+    0%{ 
+        transform: scaleX(0); 
+    } 
+    100%{ 
+        transform: scaleX(1); 
+    } 
+} 
+#xac1{ 
+    position: absolute; 
+    width: 200px; 
+    height: 200px; 
+    margin-top: 30px; 
+    margin-left: 97.5px; 
+    animation: xacs .5s linear 1.7s forwards; 
+    opacity: 0; 
+} 
+#xac2{ 
+    position: absolute; 
+    width: 200px; 
+    height: 200px; 
+    margin-top: 360px; 
+    margin-left: 97.5px; 
+    animation: xacs .5s linear 1.7s forwards; 
+    opacity: 0; 
+} 
+#xac3{ 
+    position: absolute; 
+    width: 200px; 
+    height: 200px; 
+    margin-top: 360px; 
+    margin-left: 550px; 
+    animation: xacs .5s linear 1.7s forwards; 
+    opacity: 0; 
+} 
+#xac4{ 
+    position: absolute; 
+    width: 200px; 
+    height: 200px; 
+    margin-top: 30px; 
+    margin-left: 550px; 
+    animation: xacs .5s linear 1.7s forwards; 
+    opacity: 0; 
+} 
+ 
+ 
+@keyframes xacs{ 
+    100%{ 
+        opacity: 1; 
+    } 
+}
